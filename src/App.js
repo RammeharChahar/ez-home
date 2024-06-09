@@ -28,7 +28,7 @@ function App() {
     e.preventDefault();
     try {
       if (validateEmail(email)) {
-        const res = await axios.post('http://34.225.132.160:8002/api',{
+        const res = await axios.post('https://34.225.132.160:8002/api',{
             email : email,
         },{
           headers: {
