@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-image{
+  margin-top: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-section{
+  width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.main-text{
+  width: 520px;
+  font-size: 32px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+}
+.sec-text{
+  font-size: 24px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+.main-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.feature-box{
+  width: 250px;
+  height: 200px;
+  background: #112949 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+.feature-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.feature-image{
+  width: 58px;
+}
+.feature-heading{
+  font-size: 18px;
+  color: #3CC3F2;
+  width: 120px;
+}
+.feature-secText{
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 251px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.email-inputBox{
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  width: 250px;
+  height: 49px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.submit-btn{
+  background: #EA7B2C 0% 0% no-repeat padding-box;
+  border: 1px solid #EA7B2C;
+  border-radius: 10px;
+  width: 213px;
+  height: 49px;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+input::placeholder{
+  font-size: 24px;
+  color: #ABABAB;
+  text-align: left;
+}
+.form-section{
+  margin-block: 20px;
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.form-section-pc{
+  margin-block: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.error-email{
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  width: 250px;
+  height: 49px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  color: red;
+  font-style: italic;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .logo-image{
+    margin-top: 40px;
+  }
+  .logo-section{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-text{
+    font-size: 32px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .main-section{
+    display: flex;
+    justify-content: center;
+  }
+  .sec-text{
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .feature-box{
+    width: 311px;
+    height: 254px;
+    background: #112949 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .feature-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .feature-image{
+    width: 58px;
+  }
+  .feature-heading{
+    font-size: 24px;
+    color: #3CC3F2;
+    width: 173px;
+  }
+  .feature-secText{
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 251px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .email-inputBox{
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 350px;
+    height: 49px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .submit-btn{
+    background: #EA7B2C 0% 0% no-repeat padding-box;
+    border: 1px solid #EA7B2C;
+    border-radius: 10px;
+    width: 213px;
+    height: 49px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  input::placeholder{
+    font-size: 24px;
+    color: #ABABAB;
+    text-align: left;
+  }
+  .form-section{
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .error-email{
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 350px;
+    height: 49px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    color: red;
+    font-style: italic;
+  }
+  .form-section-pc{
+    display: none;
   }
 }
